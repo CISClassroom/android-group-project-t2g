@@ -6,4 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".Add_Stu_Activity">
 
+    <EditText
+        android:id="@+id/txt_name_stu"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="86dp"
+        android:ems="10"
+        android:hint="ชื่อนักศึกษา"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etxt_stu_number" />
+
+    <TextView
+        android:id="@+id/txt_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/kanit_bold"
+        android:text="เพิ่มข้อมูลนักศึกษา"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btn_add_stu"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="86dp"
+        android:background="@drawable/btn_edge"
+        android:fontFamily="@font/kanit_bold"
+        android:text="บันทึกข้อมูล"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fac_stu" />
+
+    <EditText
+        android:id="@+id/Etxt_stu_number"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="86dp"
+        android:ems="10"
+        android:hint="รหัสนักศึกษา"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_show1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="127dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_act" />
+
+    <EditText
+        android:id="@+id/txt_pro_stu"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="สาขาวิชา"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_stu" />
+
+    <EditText
+        android:id="@+id/txt_fac_stu"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="คณะ"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pro_stu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

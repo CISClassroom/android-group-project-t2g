@@ -33,11 +33,13 @@
             android:textColor="#000000"
             android:textSize="30sp" />
 
+
         <ImageView
             android:id="@+id/btn_to_activity"
             android:layout_width="397dp"
             android:layout_height="165dp"
-            app:srcCompat="@drawable/btn_add_act" />
+            app:srcCompat="@drawable/btn_add_aaa"
+            ></ImageView>
 
 
         <TextView

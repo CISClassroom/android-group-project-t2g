@@ -14,6 +14,6 @@ class MenuActivity : AppCompatActivity() {
         btn_to_activity.setOnClickListener{ startActivity(Intent(this@MenuActivity, Act_Activity::class.java))}
         btn_to_stu.setOnClickListener{ startActivity(Intent(this@MenuActivity, Stu_Activity::class.java))}
         btn_add_act.setOnClickListener{ startActivity(Intent(this@MenuActivity, Add_Act_Activity::class.java))}
-        btn_add_stu.setOnClickListener{ startActivity(Intent(this@MenuActivity, Add_Act_Activity::class.java))}
+        btn_add_stu.setOnClickListener{ startActivity(Intent(this@MenuActivity, Add_Stu_Activity::class.java))}
     }
 }

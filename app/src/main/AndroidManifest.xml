@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Add_Stu_Activity"></activity>
+        <activity android:name=".StudentShowActivity"></activity>
+        <activity android:name=".Pattern_Stu_Activity" />
+        <activity android:name=".Add_Stu_Activity" />
         <activity android:name=".Add_Act_Activity" />
         <activity android:name=".Stu_Activity" />
         <activity android:name=".Act_Activity" />
