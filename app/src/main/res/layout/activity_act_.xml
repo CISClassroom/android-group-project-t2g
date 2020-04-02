@@ -4,6 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Act_Activity">
+
+    <Spinner
+        android:id="@+id/spin_act"
+        android:layout_width="277dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="91dp"
+        android:gravity="center"
+        android:background="@drawable/btn_spinner"
+        android:fontFamily="@font/kanit_bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btn_con"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="86dp"
+        android:background="@drawable/btn_edge"
+        android:fontFamily="@font/kanit_bold"
+        android:text="บันทึกข้อมูล"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_num_stu" />
+
+    <EditText
+        android:id="@+id/txt_num_stu"
+        android:layout_width="277dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/btn_spinner"
+        android:ems="10"
+        android:digits="0,1,2,3,4,5,6,7,8,9,-"
+        android:hint="รหัสนักศึกษา"
+        android:inputType="numberSigned"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_act" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="212dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_act" />
+
+    <ImageView
+        android:id="@+id/btn_bb"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/re" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

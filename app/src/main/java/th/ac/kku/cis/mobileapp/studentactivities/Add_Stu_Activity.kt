@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_add__stu_.*
-import th.ac.kku.cis.mobileapp.studentactivities.Model.Show
 import th.ac.kku.cis.mobileapp.studentactivities.Model.Student
 
 class Add_Stu_Activity : AppCompatActivity() {
@@ -13,14 +12,13 @@ class Add_Stu_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add__stu_)
+        btn_bb.setOnClickListener { onBackPressed()}
         btn_add_stu.setOnClickListener {
             saveData()
         }
 
-
-
-
     }
+
 
 
     private fun saveData(id_stu:String,name_stu:String){
@@ -62,11 +60,10 @@ class Add_Stu_Activity : AppCompatActivity() {
         val id = id_stu
         val student = Student(name_stu,pro_stu,fac_stu)
 
-            myDataBase.child(id).setValue(student).addOnCompleteListener{
-                Toast.makeText(this,"บันทึกเรียบร้อย :) ",Toast.LENGTH_LONG).show()
+        myDataBase.child(id).setValue(student).addOnCompleteListener{
+            Toast.makeText(this,"บันทึกเรียบร้อย :) ",Toast.LENGTH_LONG).show()
 
         }
     }
-
 
 }

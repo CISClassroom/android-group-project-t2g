@@ -53,11 +53,11 @@ class Stu_Activity : AppCompatActivity() {
                 listView.setOnItemClickListener { parent, view, position, id ->
                     val selectedItem = parent.getItemAtPosition(position) as Student_T
 
-                    val i = Intent(this@Stu_Activity,Pattern_Stu_Activity::class.java)
-                    i.putExtra("send_topic",selectedItem.id_student)
-                    i.putExtra("send_subtopic",selectedItem.name)
-                    i.putExtra("send_article",selectedItem.program)
-                    i.putExtra("send_article",selectedItem.faculty)
+                    val i = Intent(this@Stu_Activity,StudentShowActivity::class.java)
+                    i.putExtra("send_id_student",selectedItem.id_student)
+                    i.putExtra("send_name",selectedItem.name)
+                    i.putExtra("send_program",selectedItem.program)
+                    i.putExtra("send_faculty",selectedItem.faculty)
                     startActivity(i)
 
                     //Toast.makeText(this@HtmlActivity, selectedItem.topic, Toast.LENGTH_SHORT).show()

@@ -1,9 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".StudentShowActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back_menu"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="#15D93A"
+            android:backgroundTint="#15D93A"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="10dp"
+            android:background="#15D93A"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="20dp"
+            android:text="ข้อมูลนักศึกษา"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_reg"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/show_id_student"
+            android:gravity="right"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="รหัสนักศึกษา"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/A1"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="7dp"
+            android:paddingStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_id_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="[txt_id_student]"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/show_name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="ชื่อ-นามสกุล"
+            android:gravity="right"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/A2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="7dp"
+            android:paddingStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="[txt_name]"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+<!--        txt_program.text =get_program-->
+<!--               txt_faculty.text =get_faculty-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/show_program"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="สาขา"
+            android:gravity="right"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/A3"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="7dp"
+            android:paddingStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_program"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="[txt_program]"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/show_faculty"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="คณะ"
+            android:gravity="right"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/A4"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingTop="7dp"
+            android:paddingStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_faculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="[txt_faculty]"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kanit_reg"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
