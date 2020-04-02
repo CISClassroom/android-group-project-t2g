@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:paddingLeft="5sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/kanit_bold"
+                android:text="ชื่อกิจกรรม "
+
+                android:textColor="#DA9D48"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_act_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/kanit_bold"
+                android:paddingLeft="6dp"
+                android:text="[กิจกรรม]"
+                android:textColor="#3A3A3A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/kanit_reg"
+                android:text="เวลา     "
+                android:textColor="#BE822F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_act_date"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/kanit_bold"
+                android:paddingLeft="6sp"
+                android:paddingTop="6sp"
+                android:text="[Date]"
+                android:textColor="#3A3A3A"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                app:srcCompat="@drawable/trash" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

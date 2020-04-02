@@ -42,13 +42,10 @@ class Stu_Activity : AppCompatActivity() {
                     )
 
                 }
-
-
                 listView.adapter = StudentAdapter(
                     this@Stu_Activity,
                     R.layout.activity_pattern__stu_,
                     code_list
-
                 )
                 listView.setOnItemClickListener { parent, view, position, id ->
                     val selectedItem = parent.getItemAtPosition(position) as Student_T
@@ -62,15 +59,9 @@ class Stu_Activity : AppCompatActivity() {
 
                     //Toast.makeText(this@HtmlActivity, selectedItem.topic, Toast.LENGTH_SHORT).show()
                 }
-
-
-
-
-
             }
         }
         )
-
 
         btn_back_menu.setOnClickListener { onBackPressed()}
     }

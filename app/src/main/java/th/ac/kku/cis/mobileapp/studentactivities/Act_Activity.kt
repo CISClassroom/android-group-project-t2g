@@ -26,7 +26,7 @@ class Act_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act_)
-
+        btn_bb.setOnClickListener { onBackPressed() }
         Firebase.database.reference.child("activities").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 for (postSnapshot in dataSnapshot.children) {

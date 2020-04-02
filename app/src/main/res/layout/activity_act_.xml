@@ -7,21 +7,36 @@
     android:background="#FFFFFF"
     tools:context=".Act_Activity">
 
+    <TextView
+        android:id="@+id/txt_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/kanit_bold"
+        android:text="ลงทะเบียนกิจกรรม"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <Spinner
         android:id="@+id/spin_act"
         android:layout_width="277dp"
         android:layout_height="46dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="91dp"
-        android:gravity="center"
-        android:background="@drawable/btn_spinner"
+        android:background="@drawable/btn_date"
         android:fontFamily="@font/kanit_bold"
+        android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_show1" />
 
     <Button
         android:id="@+id/btn_con"
